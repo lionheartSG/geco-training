@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <!-- onload="alert('hi')" -->
+  <h2>Qn1</h2>
+  <p>Write a program to check vowel, consonant or non-alphabet using switch case. Change value of entered Alphabet and check if your code works fine.</p>
+  <form>
+    <input type="text" id="qn1" name="qn1" value="" maxlength="1">
+  </form>
+  <button onclick="checkChar()">Submit</button>
+  <p>Answer: <span id="ans1"></span></p>
+
+  <h2>Qn2</h2>
+  <p>Write a JavaScript program to create menu driven calculator that performs basic arithmetic operations (add, subtract, multiply and divide) using switch case.</p>
+  <p>The calculator should input two numbers and an operator: +, -, *, / from the user. It should perform operation according to the operator entered and must take input in given format.</p>
+  <form>
+    <input type="text" id="qn2a" value="" placeholder="Put in a number"><br>
+    <input type="text" id="qn2b" value="" placeholder="Put in an operator (+,-,*/%)"><br>
+    <input type="text" id="qn2c" value="" placeholder="Put in a number"><br>
+  </form>
+  <button onclick="calculate()">Submit</button>
+
+  <p>Answer: <span id="ans2"></span></p>
+
+  <h2>Qn3</h2>
+  <p>Write a JavaScript program to input sides of a triangle and check whether a triangle is equilateral, scalene or isosceles triangle using if else.</p>
+  <p><strong>Properties of triangle:</strong></p>
+
+  <p>A triangle is said Equilateral Triangle, if all its sides are equal. If a, b, c are three sides of triangle. Then, the triangle is equilateral only if a == b == c.</p>
+  <p>A triangle is said Isosceles Triangle, if its two sides are equal. If a, b, c are three sides of triangle. Then, the triangle is isosceles if either a == b or a == c or b == c.</p>
+  <p>A triangle is said Scalene Triangle, if none of its sides are equal.</p>
+
+  <form>
+    <input type="text" id="qn3a" value="" placeholder="Put in a number"><br>
+    <input type="text" id="qn3b" value="" placeholder="Put in a number"><br>
+    <input type="text" id="qn3c" value="" placeholder="Put in a number"><br>
+  </form>
+  <button onclick="triangleCheck()">Submit</button>
+
+  <p>Answer: <span id="ans3"></span></p>
+
+  <h2>Qn4</h2>
+  <p>Write a JavaScript program to input electricity unit charge and calculate the total electricity bill according to the given condition:</p>
+  <ol>
+    <li>For first 50 units Rs. 0.50/unit</li>
+    <li>For next 100 units Rs. 0.75/unit</li>
+    <li>For next 100 units Rs. 1.20/unit</li>
+    <li>For unit above 250 Rs. 1.50/unit. An additional surcharge of 20% is added to the bill.</li>
+  </ol>
+
+  <form>
+    <input type="text" id="qn4" value="" placeholder="Electric Usage (units)">
+  </form>
+  <button onclick="calculateEnergyCost()">Submit</button>
+
+  <p>Answer: <span id="ans4"></span></p>
+
+
+  <script src="./js/assessment.js"></script>
+</body>
+</html>
+
+<h2>Qn14</h2>
+<p>Using selectors: create a list in html: ask user any item from list display 'item' found.</p>
+
+<ol>
+  <li class="item">Apple</li>
+  <li class="item">Banana</li>
+  <li class="item">Chocolate</li>
+  <li class="item">Dairy</li>
+  <li class="item">Egg</li>
+</ol>
+
+<form>
+  <input type="text" id="qn14" value="" placeholder="Check if item found">
+</form>
+<button onclick="checkItemFound()">Submit</button>
