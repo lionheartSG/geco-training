@@ -13,7 +13,7 @@
   <form>
     <input type="text" id="qn1" name="qn1" value="" maxlength="1">
   </form>
-  <button onclick="checkChar()">Submit</button>
+  <button onclick="checkChar(); fullSwitch()">Submit</button>
   <p>Answer: <span id="ans1"></span></p>
 
   <h2>Qn2</h2>
@@ -61,23 +61,22 @@
 
   <p>Answer: <span id="ans4"></span></p>
 
+  <h2>Qn14</h2>
+  <p>Using selectors: create a list in html: ask user any item from list display 'item' found.</p>
 
-  <script src="./js/assessment.js"></script>
+  <ol>
+    <li class="item">Apple</li>
+    <li class="item">Banana</li>
+    <li class="item">Chocolate</li>
+    <li class="item">Dairy</li>
+    <li class="item">Egg</li>
+  </ol>
+
+  <form>
+    <input type="text" id="qn14" value="" placeholder="Check if item found">
+  </form>
+  <button onclick="checkItemFound()">Submit</button>
+
+  <script src="./js/speedtest.js"></script>
 </body>
 </html>
-
-<h2>Qn14</h2>
-<p>Using selectors: create a list in html: ask user any item from list display 'item' found.</p>
-
-<ol>
-  <li class="item">Apple</li>
-  <li class="item">Banana</li>
-  <li class="item">Chocolate</li>
-  <li class="item">Dairy</li>
-  <li class="item">Egg</li>
-</ol>
-
-<form>
-  <input type="text" id="qn14" value="" placeholder="Check if item found">
-</form>
-<button onclick="checkItemFound()">Submit</button>

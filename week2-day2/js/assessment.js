@@ -1,6 +1,6 @@
 function checkChar() {
   var x = document.getElementById("qn1").value.toLowerCase()
-
+  const start = performance.now()
   if (x.match(/[a-z]/)) {
     switch (x) {
       case "a":
@@ -21,14 +21,14 @@ function checkChar() {
     document.getElementById("ans1").innerHTML = "This is not an alphabet or you have not input anything"
     document.getElementById("qn1").value = ""
   }
+  const end = performance.now();
+  console.log(`Execution time: ${end - start} ms`);
 }
 
 function calculate() {
   var qn2a = parseInt(document.getElementById("qn2a").value)
   var qn2b = document.getElementById("qn2b").value
   var qn2c = parseInt(document.getElementById("qn2c").value)
-
-  console.log(qn2a, qn2b, qn2c)
 
   switch (qn2b) {
     case "+":
