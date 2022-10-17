@@ -36,3 +36,19 @@
     transform: rotate(360deg);
   }
 }
+
+.user-cards    {
+  border: solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 16px;
+}
+
+.user-cards .user-card {
+  border: solid black;
+  margin: 24px;
+  padding: 24px;
+  border-radius: 16px;
+}

@@ -1,5 +1,6 @@
 import './App.css';
 import { Component } from 'react';
+import Week3Day1 from './components/Week3Day1'
 
 // App is class-component
 class App extends Component {
@@ -21,10 +22,12 @@ class App extends Component {
   //lifecycle method
   render(){
     return(
-    <div>
-      Hello World. This is a state example. Her name is {this.state.firstName}. Her age is {this.state.age}. Her designation is {this.state.designation}
-      <button onClick={this.handleClick}>Update</button>
+    <div className='container'>
+      {/* Hello World. This is a state example. Her name is {this.state.firstName}. Her age is {this.state.age}. Her designation is {this.state.designation}
+      <button onClick={this.handleClick}>Update</button> */}
+      <Week3Day1 />
     </div>
+
     )
   }
 }
