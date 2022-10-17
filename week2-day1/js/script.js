@@ -171,92 +171,23 @@
 // // Operator precedance (), *, /, +, -, L-R
 // // Rules >> 1. Operator precedence, 2. datatype of oprands, 3. non-numeric or numeric, 4. result
 
-// //4. Comparison
+// //4. Comparison Operator
 
-// //5. Logical
+var x = 9;
+var y = '9'
 
+console.log(x == y) //look for value (true)
+console.log(x === y) //look for value and datatype (false)
+console.log(x > 20) // false
+console.log(y < 20) // true
+console.log(x != 9) //look for value
+console.log(x !== 9) // look for value and datatype
+console.log(x >= 10) // false
+console.log(y <= 9) // true
 
-// Question 2 - Extract first five letters from a string ('gfuh ieiuei')
-var str2 = "gfuh ieiuei"
-console.log(str2.replace(/\s+/, '').slice(0, 5))
+//Logical Operator &&, ||, !
 
-// Question 3 - Get the length of a string and make it uppercase ('hduej dij')
-var str3 = 'hduej dij'
-console.log(str3.toUpperCase())
-
-// Question 4 - Take a string, make it uppercase and trim it (' biji jdo ')
-var str4 = ' biji jdo '
-console.log(str4.toUpperCase().trim())
-
-// Question 5 - Replace specified word in a string ('', '')
-var str5 = "My name is Rafi"
-console.log(str5.replace("Rafi", "John"))
-
-// Question 6 - Find the duplicate in a string() (use array)
-var str6 = "My name is Rafi. Rafi is a programmer"
-str6array = str6.split(/\W/)
-var set = new Set(str6array)
-
-const duplicates = str6array.filter((s) => {
-  if (set.has(s)) {
-    set.delete(s)
-  } else {
-    return s
-  }
-})
-
-console.log(duplicates)
-
-// Question 7 = Reverse a string (use array method)
-
-var str7 = "My name is Rafi. Rafi is a programmer"
-console.log(str7.split(" ").reverse().join())
-
-// Question 8 - Find the highest and lowest value in array
-
-var array8 = [1, 2, 3, 4, 5, 6, 7, 8, 9]
-console.log(Math.min(...array8))
-console.log(Math.max(...array8))
-
-// Question 9 - Practice array of objects
-
-const User = [
-  {
-  firstName: "James",
-  lastName: "Bond"
-  },
-  {
-  firstName: "Harry",
-  lastName: "Potter"
-  },
-  {
-  firstName: "Ron",
-  lastName: "Weasley"
-  },
-  {
-  firstName: "Tom",
-  lastName: "Cruise"
-  },
-  {
-  firstName: "Taylor",
-  lastName: "Swift"
-  }
-]
-
-// Question 10 - Display first 3 elements in an array (Using array of object from Qn 9)
-
-console.log(User.slice(0, 3))
-
-// Question 11 - Remove 4th (index) element and add 2 element there (Using array of object from Qn 9)
-
-User.splice(4, 1, {firstName: "Freddy", lastName: "Kruger"} , {firstName: "Jason", lastName: "Bourne"})
-
-console.log(User)
-
-// Question 12 -
-
-var str1 = 'Today is';
-var str2 = '      a beautiful day     '
-var str3 = ' In Hawaii.     '
-
-console.log(result = str1.trim() + " " + str2.trim() + " " + str3.trim().toLowerCase().replace("hawaii" , "Hawaii"))
+console.log(x == y && x === y && y <=9 ) // if all are true, then it return true.
+console.log(x == y || x === y || y <=9 ) // if one of them true, it return true
+console.log((x == y || x === y) && y <= 9) // true
+console.log (!(x == y)) // false
