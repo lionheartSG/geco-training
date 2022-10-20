@@ -9,3 +9,6 @@ const App = () => {
 }
 
 export default App
+
+//install propTypes
+//change Root error
