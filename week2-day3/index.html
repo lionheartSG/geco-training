@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <title>Document</title>
+</head>
+<body>
+  <h3>Getting API and displaying them</h3>
+
+  <form action="/action_page.php">
+    <label for="movie">Input a movie name</label>
+    <input type="text" id="name" name="name" value="">
+  </form>
+  <button onclick="getAPI()">Press Me</button>
+
+  <ul id="results">
+
+  </ul>
+<br><br><br><br><br><br><br><br><br><br><br>
+
+  <form>
+    <label>Name</label><br>
+    <input type="text" id="personName" value='' placeholder="Enter Name">
+    <p id="nameError"></p>
+
+    <label>Email</label><br>
+    <input type="text" id="email" placeholder="Enter Email">
+    <p id="emailError"></p>
+
+    <label>Contact</label><br>
+    <input type="text" id="contact" value='' placeholder="Enter Contact Number">
+    <p id="contactError"></p>
+
+    <label>Age</label><br>
+    <input type="text" id="age" value='' placeholder="Enter Your Age">
+    <p id="ageError"></p>
+
+    <label>Designation</label><br>
+    <input type="text" id="designation" value='' placeholder="Enter Your Designation">
+    <p id="designationError"></p>
+
+    <label>Files</label><br>
+    <input type="file" id="files" value='' placeholder="Enter Your Designation" multiple>
+    <p id="fileError">Please upload at least one file</p>
+
+    <label>Date of Birth</label><br>
+    <input type="date" id="dob" value='' placeholder="Enter Your Designation">
+    <p id="dateOfBirthError"></p>
+
+    <button type="button" onclick="validateForm()">Submit</button>
+    <p id="formError"></p>
+</form>
+
+<h2 id="valid?"></h2>
+
+<!-- <button onclick="this.style.display = 'none'">This button will disappear</button> -->
+  <script src="./js/assessment.js"></script>
+</body>
+</html>
