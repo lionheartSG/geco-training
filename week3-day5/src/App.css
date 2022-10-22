@@ -1,0 +1,84 @@
+body {
+  background: linear-gradient(to right, #c6ffdd, #fbd786, #f7797d);
+}
+
+.main-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(12, 12, 12, 0.904);
+  width: 500px;
+  color: rgba(255, 255, 255, 0.911);
+  border-top-right-radius: 24px;
+  border-bottom-right-radius: 24px;
+}
+
+.container-full {
+  margin-top: 30px;
+  display: flex;
+  width: 1000px;
+  height: 600px;
+  border-radius: 24px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin-top: 100px;
+}
+
+.container-picture {
+  background-image: url("./formpicture.jpg");
+  background-size: cover;
+  width: 500px;
+  border-top-left-radius: 24px;
+  border-bottom-left-radius: 24px;
+}
+
+.container-card {
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 1200px;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  margin: 24px;
+  width: 120px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.card .card-img-top{
+  margin: 24px;
+  border-radius: 16px;
+  width: 280px;
+}
+
+.card .card-body{
+  background: linear-gradient(to right, #659999, #f4791f);
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+  color: whitesmoke;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-control {
+  background-color: rgb(20, 20, 20);
+  color: rgba(255, 255, 255, 0.336);
+  border-color: rgba(0, 0, 0, 0);
+  border-radius: 8px;
+}
+
+/* .form-control #name {
+  background-color: rgba(255, 255, 255, 0.575);
+  color: white;
+} */
