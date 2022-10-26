@@ -1,0 +1,19 @@
+button {
+  margin-bottom: 50px;
+}
+
+form {
+  margin-bottom: 50px;
+}
+
+.movie-grid {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 16px;
+}
+
+.movie-card {
+  width: 300px;
+  height: 600px;
+  margin: 16px;
+}
