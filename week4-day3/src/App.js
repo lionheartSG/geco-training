@@ -1,17 +1,17 @@
-import React, { useState } from "react"
-import NewComponent from "./components/NewComponent"
+import React from "react"
 import "./App.css"
+import PageWithTwoComponents from "./components/PageWithTwoComponents"
+import SymDif from "./components/SymDif"
+import Particulars from "./components/Particulars"
 
 const App = () => {
   return (
-    <div>
-      Hello World
-      <NewComponent />
-    </div>
+    <>
+      <Particulars />
+      {/* <PageWithTwoComponents />
+      <SymDif /> */}
+    </>
   )
 }
 
 export default App
-
-
-//change Root error

@@ -1,0 +1,39 @@
+.Component-B {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-card{
+  width: 200px;
+  height: auto;
+  background-color: aquamarine;
+  margin: 24px;
+  border-radius: 16px;
+  padding: 24px;
+}
+
+.side-kick {
+  width: 200px;
+  height: 200px;
+  background-color: aquamarine;
+  margin: 24px;
+  border-radius: 16px;
+  padding: 24px;
+}
+
+.movie-cards{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.movie-card {
+  margin: 24px;
+}
+
+.search-box {
+  display: flex;
+  flex-wrap: wrap;
+}
