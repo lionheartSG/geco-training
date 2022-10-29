@@ -51,7 +51,7 @@ const Particulars = () => {
   }
 
   return (
-    <div className="container mt-5">
+    <div className="container mt-5 mb-5">
       <Form>
         <Form.Group className="mb-3" controlId="formBasicName">
           <Form.Label>Username</Form.Label>

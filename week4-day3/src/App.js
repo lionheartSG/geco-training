@@ -7,9 +7,9 @@ import Particulars from "./components/Particulars"
 const App = () => {
   return (
     <>
+      <PageWithTwoComponents />
+      <SymDif />
       <Particulars />
-      {/* <PageWithTwoComponents />
-      <SymDif /> */}
     </>
   )
 }
