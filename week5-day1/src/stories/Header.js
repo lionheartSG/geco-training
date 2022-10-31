@@ -1,29 +1,31 @@
 import React from "react"
 import PropTypes from "prop-types"
 import "./Header.css"
+import { useState } from "react"
 
-export const Header = ({login, backgroundColor}) => {
+export const Header = ({ login, backgroundColor, signIn }) => {
+
   return (
-    <div class="header" style={{backgroundColor: backgroundColor}}>
-      <a href="#default" class="logo">
-        { login ? "Welcome" : "Please Log In" }
+    <div className="header d-flex justify-content-between align-content-center" style={{ backgroundColor: backgroundColor }}>
+      <a href="#default" className="logo">
+        {login ? "Welcome" : "Please Log In" }
       </a>
-      <div class="header-right">
-        <a class="active" href="#home">
-          Home
-        </a>
-        <a href="#contact">Contact</a>
-        <a href="#about">About</a>
-      </div>
+        {login ? <button type="button" class="btn btn-danger" onClick={signIn}>
+          Logout
+        </button> : <button type="button" class="btn btn-danger" onClick={signIn}>
+          Login
+        </button>}
     </div>
   )
 }
 
 Header.PropTypes = {
   login: PropTypes.boolean,
-  backgroundColor: PropTypes.string
+  backgroundColor: PropTypes.string,
+  onClick: PropTypes.func
 }
 
 Header.defaultTypes = {
   login: false,
+  onClick: undefined
 }

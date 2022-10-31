@@ -1,5 +1,5 @@
 import React from 'react'
-import RecipeReviewCard from "./Card"
+import { RecipeReviewCard } from "./Card"
 
 
 //export components

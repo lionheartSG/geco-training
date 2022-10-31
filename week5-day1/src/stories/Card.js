@@ -27,7 +27,7 @@ const ExpandMore = styled((props) => {
   }),
 }));
 
-export default function RecipeReviewCard({backgroundColor}) {
+export function RecipeReviewCard({backgroundColor}) {
   const [expanded, setExpanded] = React.useState(false);
 
   const handleExpandClick = () => {
@@ -47,14 +47,14 @@ export default function RecipeReviewCard({backgroundColor}) {
             <MoreVertIcon />
           </IconButton>
         }
-        title="Shrimp and Chorizo Paella"
-        subheader="September 14, 2016"
+        title="Very nice cake"
+        subheader="October 31, 2022"
       />
       <CardMedia
         component="img"
         height="194"
-        image="/static/images/cards/paella.jpg"
-        alt="Paella dish"
+        image="Pound_layer_cake.jpg"
+        alt="Cake"
       />
       <CardContent>
         <Typography variant="body2" color="text.secondary" style={{backgroundColor}}>
@@ -113,5 +113,5 @@ export default function RecipeReviewCard({backgroundColor}) {
 }
 
 RecipeReviewCard.PropTypes = {
-  backgroundColor: PropTypes.string
+  backgroundColor: PropTypes.string,
 }

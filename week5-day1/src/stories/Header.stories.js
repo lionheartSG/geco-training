@@ -5,7 +5,10 @@ import { Header } from "./Header"
 //export components
 export default {
   title: 'Header',
-  component: Header
+  component: Header,
+  argTypes: {
+    onClick: { action: 'clicked' }
+}
 }
 
 const Template = (args) => <Header {...args} />
