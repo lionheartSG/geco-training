@@ -1,0 +1,100 @@
+.mainpage{
+  display: flex;
+}
+
+.left-page{
+  display: flex;
+  justify-content: center;
+  width: 50%;
+}
+
+.right-page {
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%
+}
+
+.full-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 40%;
+  margin: 48px 0;
+  background-color: white;
+  padding: 24px;
+  border-radius: 12px;
+}
+
+#card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 200px;
+  height: 400px;
+  background-color: white;
+  margin: 16px;
+  border-radius: 16px;
+}
+
+#card .bottom-part {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: brown;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+  width: 200px;
+  height: 50px;
+}
+
+#card p{
+  margin: 0
+}
+
+#card .top-part {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: rgb(255, 255, 255);
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  width: 200px;
+  height: 350px;
+}
+
+.buttons-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media only screen and (max-width: 600px){
+  .mainpage {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .left-page{
+    width: 100%
+  }
+
+  .right-page{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .full-form{
+    width: 380px;
+  }
+
+  #card {
+    width: 300px;
+  }
+
+  #card .bottom-part {
+    width: 300px;
+  }
+}
