@@ -1,0 +1,28 @@
+.contact-us {
+  display: flex;
+  background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.6)), url('https://www.telegraph.co.uk/content/dam/football/2022/03/27/TELEMMGLPICT000290884199_trans_NvBQzQNjv4BqucPQyB5DSy5hMSlzWQTtsP4Xpit_DMGvdp2n7FDd82k.jpeg');
+  background-repeat: no-repeat center center fixed;
+  background-size: cover;
+  align-items: center;
+}
+
+.contact-us-right {
+  border: 16px solid rgba(174, 189, 43, 0.422);
+  flex: 33%;
+  height: 400px;
+  color: white;
+  margin: 80px;
+  padding: 32px;
+
+}
+
+.contact-us-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  height: 600px;
+  flex: 66%;
+  padding: 48px;
+  line-height: 48px;
+}
