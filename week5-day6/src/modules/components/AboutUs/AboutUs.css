@@ -1,0 +1,27 @@
+.about-us {
+  display: flex;
+  background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.6)), url('https://e00-marca.uecdn.es/assets/multimedia/imagenes/2022/07/19/16582367670092.jpg');
+  background-repeat: no-repeat center center fixed;
+  background-size: cover;
+  align-items: center;
+}
+
+.about-us-left {
+  border: 16px solid rgb(167, 26, 26);
+  flex: 33%;
+  height: 400px;
+  color: white;
+  margin: 80px;
+  padding: 32px;
+
+}
+
+.about-us-right {
+  display: flex;
+  align-items: center;
+  color: white;
+  height: 600px;
+  flex: 66%;
+  padding: 48px;
+  line-height: 48px;
+}
